@@ -1,4 +1,4 @@
 module.exports = {
-  workers: 1,          // 🔴 keep 1 (avoid blocking)
+  workers: 1,
   fullyParallel: false
 };

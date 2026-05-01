@@ -12,11 +12,9 @@ test('Search iPhone and add to cart', async ({ page }) => {
 
   const product = products.first();
 
-  // ✅ Price (safe selector)
   const price = await product.locator('.a-price .a-offscreen').first().textContent();
   console.log('iPhone Price:', price);
 
-  // ✅ Try add-to-cart directly
   const addBtn = product.locator(
     'button[name="submit.addToCart"], button:has-text("Add to cart")'
   );
